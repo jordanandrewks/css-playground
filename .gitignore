@@ -86,5 +86,10 @@ dist
 # TernJS port file
 .tern-port
 
-
+# Mac DS_Store
 .DS_Store
+
+# Vscode
+.vscode
+
+# I know, it's overkill.
