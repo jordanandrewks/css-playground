@@ -3,7 +3,18 @@
 <html>
   <head>
     <title>static buttons</title>
+    
     <style>
+      .gird-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      button {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
       .add-to-cart-button {
         padding-top: 8px;
         padding-bottom: 8px;
@@ -11,7 +22,7 @@
         padding-right: 16px;
         border: 1px solid black;
         cursor: pointer;
-        transition: all 0.1s;
+        transition: all 0.12s;
         background-color: rgb(237, 237, 237);
       }
 
@@ -28,15 +39,30 @@
         padding-bottom: 6px;
         padding-left: 14px;
         padding-right: 14px;
-        font-size: 12px;
+        font-size: 85%;
         border-radius: 4px;
       }
+
+      .button-container {
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
     </style>
   </head>
 
   <body>
-    <div class="add-to-cart-container">
-      <button class="add-to-cart-button">Add to Cart</button>
+    <div class="gird-container">
+      <div style="background-color: rgb(238, 238, 238)">
+        <div class="button-container">
+          <button class="add-to-cart-button">Click Me</button>
+        </div>
+      </div>
+      <div style="background-color: rgb(244, 244, 244)">1fr</div>
+      <div style="background-color: rgb(238, 238, 238)">1fr</div>
+      <div style="background-color: rgb(244, 244, 244)">1fr</div>
     </div>
   </body>
 </html>
