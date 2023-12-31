@@ -16,6 +16,7 @@ body {
     rgba(148, 187, 233, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+height: 4000px;
 }
 
 p {
