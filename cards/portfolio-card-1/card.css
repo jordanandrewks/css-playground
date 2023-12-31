@@ -3,12 +3,12 @@
 }
 
 .card-row {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.card-link {
-  display: block; /* or inline-block, depending on your layout */
+.card-container {
+  display: inline;
   text-decoration: none; /* Optional: removes the underline from links */
   color: inherit; /* Optional: ensures link color matches your design */
 }

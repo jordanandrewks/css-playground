@@ -14,7 +14,6 @@
 
 .left-section {
   flex: 1;
-  background-color: lightblue;
 }
 
 .middle-section {
@@ -24,11 +23,37 @@
 }
 
 .logo {
-    height: 60px;
+  height: 60px;
 }
 
 .right-section {
+  display: flex;
   flex: 1;
-  background-color: lightblue;
-  align-content: right;
+  justify-content: right;
+  padding-right: 40px;
+}
+
+.profile-button {
+  border-radius: 8px;
+  height: 40px;
+  width: 110px;
+  border: solid 2px white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  color: white;
+  transition: all 0.15s;
+}
+
+.profile-button:hover {
+  height: 45px;
+  width: 115px;
+  margin-right: -2.5px;
+}
+
+.profile-button:active {
+  height: 38px;
+  width: 108px;
+  margin-right: 1.2px;
+  background-color: rgba(255, 255, 255, 0.251);
+  font-weight: 600;
 }
