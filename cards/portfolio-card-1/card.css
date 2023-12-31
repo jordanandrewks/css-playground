@@ -1,4 +1,3 @@
-
 .container {
   margin-top: 140px;
 }
@@ -6,6 +5,12 @@
 .card-row {
   display: flex;
   justify-content: center;
+}
+
+.card-link {
+  display: block; /* or inline-block, depending on your layout */
+  text-decoration: none; /* Optional: removes the underline from links */
+  color: inherit; /* Optional: ensures link color matches your design */
 }
 
 .card {
@@ -19,6 +24,7 @@
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.2s ease-in, background-color 0.2s;
+  cursor: pointer;
 }
 
 .card:hover {
