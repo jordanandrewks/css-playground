@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Border Box</title>
+
+    <style>
+      * {
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .border-test-0 {
+        display: inline-block;
+        background-color: lightblue;
+        height: 400px;
+        width: 200px;
+        padding-right: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+      }
+
+      .border-test-1 {
+        display: inline;
+        background-color: lightpink;
+        height: 400px;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="display: flex">
+      <div class="border-test-0">
+        Test Area 0
+        <p>h:400 w:200</p>
+        <p>adjusted to h:400 w:190 because of border box.
+            BorderBox is -> totalWidth-totalPadding
+        </p>
+        <p>padding-right: 10</p>
+        <p>margin-right: 10</p>
+        <p>border box enabled/p></p>
+      </div>
+
+      <div class="border-test-1">Test Area 1
+        <p>h:400 w:200</p>
+        <p>padding-right: 10</p>
+        <p>margin-right: 10</p>
+        <p>border box disabled/p></p>
+      </div>
+    </div>
+  </body>
+</html>
